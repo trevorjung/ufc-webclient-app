@@ -1,0 +1,37 @@
+<h1> Create a Fighter </h1>
+
+<%= form_tag "/fighters", method: :get  do %>
+<div>
+  <%= label_tag :first_name  %>
+  <%= text_area_tag :first_name %>
+</div>
+<div>
+  <%= label_tag :last_name  %>
+  <%= text_area_tag :last_name%>
+</div>
+<div>
+  <%= label_tag :weight_class  %>
+  <%= text_area_tag :weight_class %>
+</div>
+<div>
+  <%= label_tag :weight  %>
+  <%= text_area_tag :weight %>
+</div>
+<div>
+  <%= label_tag :current_record  %>
+  <%= text_area_tag :current_record %>
+</div>
+<div>
+  <%= label_tag :current_title  %>
+  <%= text_area_tag :current_title %>
+</div>
+<div>
+  <%= label_tag :hometown  %>
+  <%= text_area_tag :hometown %>
+</div>
+<div>
+  <%= submit_tag "Create" %>
+</div>
+
+<% end %>
+

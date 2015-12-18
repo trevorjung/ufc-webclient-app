@@ -1,0 +1,12 @@
+<ul>
+  <li><%= @fighter.first_name %></li>
+  <li><%= @fighter.last_name %></li>
+  <li><%= @fighter.weight_class %></li>
+  <li><%= @fighter.weight %></li>
+  <li><%= @fighter.current_record %></li>
+  <li><%= @fighter.current_title %></li>
+  <li><%= @fighter.hometown %></li>
+</ul>
+
+<%= link_to 'Edit', "/fighters/#{params[:id]}", method: :get %>
+<%= link_to 'Delete', "/fighters/#{params[:id]}", method: :delete %>

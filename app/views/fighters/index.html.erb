@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Weight Class</th>
+    <th>Weight</th>
+    <th>Current Record</th>
+    <th>Current Title</th>
+    <th>Hometown</th>
+  </tr>
+  <tr>
+  <% @fighters.each do |fighter| %>
+    <td><%= fighter.first_name %></td>
+    <td><%= fighter.last_name%></td>
+    <td><%= fighter.weight_class%></td>
+    <td><%= fighter.weight%></td>
+    <td><%= fighter.current_record%></td>
+    <td><%= fighter.current_title%></td>
+    <td><%= fighter.hometown%></td>
+  </tr>
+  <% end %>
+</table>

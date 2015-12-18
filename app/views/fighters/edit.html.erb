@@ -1,0 +1,37 @@
+<h1> Edit a Fighter </h1>
+
+<%= form_tag "/fighters/#{@fighter.id}", method: :get  do %>
+
+<div>
+  <%= label_tag :first_name  %>
+  <%= text_area_tag :first_name, @fighter.first_name %>
+</div>
+<div>
+  <%= label_tag :last_name  %>
+  <%= text_area_tag :last_name, @fighter.last_name %>
+</div>
+<div>
+  <%= label_tag :weight_class  %>
+  <%= text_area_tag :weight_class, @fighter.weight_class %>
+</div>
+<div>
+  <%= label_tag :weight  %>
+  <%= text_area_tag :weight, @fighter.weight %>
+</div>
+<div>
+  <%= label_tag :current_record  %>
+  <%= text_area_tag :current_record, @fighter.current_record %>
+</div>
+<div>
+  <%= label_tag :current_title  %>
+  <%= text_area_tag :current_title, @fighter.current_title %>
+</div>
+<div>
+  <%= label_tag :hometown  %>
+  <%= text_area_tag :hometown, @fighter.hometown %>
+</div>
+<div>
+  <%= submit_tag "Edit" %>
+</div>
+
+<% end %>
